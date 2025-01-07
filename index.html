@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paj-ugnens xkcd klon</title>
-    <script src="js/comic.js"></script>
+    <script src="js/comic.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header></header>
-<main>
-    <div id="comic"></div>
-    <div id="comicNav">
-<ul>
-    <li id="first">First</li>
-    <li id="prev">Prev</li>
-    <li id="random">Random</li>
-    <li id="next">Next</li>
-    <li id="last">Last</li>
-</ul>
-</div>
-</main>
-<footer></footer>
+    <!-- Header med titel -->
+    <header>
+        <h1>Paj-ugnens XKCD Klon</h1>
+    </header>
+    <main>
+        <!-- Behållare för dynamiskt innehåll -->
+        <div id="comic"></div>
+        <!-- Navigationsknappar -->
+        <div id="comicNav">
+            <ul>
+                <li id="first">First</li>
+                <li id="prev">Prev</li>
+                <li id="random">Random</li>
+                <li id="next">Next</li>
+                <li id="last">Last</li>
+            </ul>
+        </div>
+    </main>
+    <!-- Footer med information -->
+    <footer>
+        <p>Skapad av Axel Pajunen. Material från <a href="https://xkcd.com/">xkcd</a>.</p>
+        <p>Detta är licenserat under <a href="https://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5 License.</a></p>
+    </footer>
 </body>
 </html>

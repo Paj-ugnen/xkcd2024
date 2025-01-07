@@ -1,0 +1,76 @@
+/* Grundläggande stil för kroppen */
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #96A8C8; 
+}
+
+/* Stil för header och footer */
+header, footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
+    border: 2px solid black; 
+}
+
+/* Stil för huvudsektionen */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Behållare för serietidning */
+#comic {
+    max-width: 80%;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 2px solid black; 
+    padding: 10px;
+}
+
+/* Stil för navigationsknappar */
+#comicNav {
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid black; 
+    padding: 10px;
+}
+
+#comicNav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comicNav li {
+    display: inline;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 1px solid black; 
+    border-radius: 5px;
+}
+
+#comicNav li:hover {
+    background-color: #E7E7E7;
+}
+
+/* Anpassningar för mindre skärmar */
+@media (max-width: 600px) {
+    #comic {
+        max-width: 100%;
+    }
+
+    #comicNav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
